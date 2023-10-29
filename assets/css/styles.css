@@ -1,0 +1,68 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set height to 100% of viewport height */
+    width: 100vw; /* Set width to 100% of viewport width */
+    overflow: hidden; /* Prevent horizontal scroll due to padding/margin */
+}
+
+/* Rest of your existing styles */
+
+.navbar {
+    color: #4b6c8a;
+}
+
+/* Center the items in the navbar in mobile mode */
+@media (max-width: 767px) {
+    .navbar-collapse {
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-nav {
+        flex-direction: column; /* Stack the items vertically in mobile mode */
+    }
+    .navbar-nav .nav-item {
+        text-align: center; /* Center the text horizontally */
+    }
+}
+
+.nav-link {
+    margin-left: .2rem;
+    margin-right: .2rem;
+    padding: .5rem .5rem;
+    background-color: #212529;
+    color: white;
+    border: 1px solid transparent;
+    display: block; /* Display as block to take full width */
+    text-align: center; /* Center the text horizontally */
+}
+
+.nav-link:hover {
+    background-color: rgb(50, 54, 57);
+    color: #f0f0f0;
+    border-color: white;
+}
+
+/* Adjust PDF embed styles */
+#pdfEmbed {
+    width: 100%;
+    height: calc(100vh - 56px); /* Adjust this value based on your navbar height */
+}
+
+/* Hide mobile menu by default */
+#mobileMenuContent {
+    display: none;
+}
+
+/* Ensure the hamburger button is on top of the navbar in mobile mode */
+#mobileMenuBtn {
+    position: relative;
+    z-index: 9999; /* Set a high z-index to place it on top */
+}
+
+.d-lg-none{
+    background-color: #212529;
+}
