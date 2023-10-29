@@ -1,22 +1,17 @@
 /* styles.css */
 
-/* Reset default margin and padding */
 body {
     margin: 0;
     padding: 0;
-    height: 100vh; /* Set height to 100% of viewport height */
-    width: 100vw; /* Set width to 100% of viewport width */
-    overflow: hidden; /* Prevent horizontal scroll due to padding/margin */
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
-/* Rest of your existing styles */
-
 .navbar {
-    /* background-color: #212529 !important; */
     color: #4b6c8a;
 }
 
-/* Center the items in the navbar in mobile mode */
 @media (max-width: 767px) {
     .navbar-collapse {
         justify-content: center;
@@ -31,8 +26,8 @@ body {
     background-color: #212529;
     color: white;
     border: 1px solid transparent;
-    display: block; /* Display as block to take full width */
-    text-align: center; /* Center the text horizontally */
+    display: block;
+    text-align: center;
 }
 
 .nav-link:hover {
@@ -41,8 +36,7 @@ body {
     border-color: white;
 }
 
-/* Adjust PDF embed styles */
-#pdfEmbed {
+iframe {
     width: 100%;
-    height: calc(100vh - 56px); /* Adjust this value based on your navbar height */
+    height: calc(100vh - 56px);
 }
