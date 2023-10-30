@@ -65,4 +65,10 @@ body {
 
 .d-lg-none{
     background-color: #212529;
+    
+}
+
+#mobileMenuContent{
+    align-items: center;
+    display: grid;
 }
